@@ -149,12 +149,12 @@ nav {
     align-items: center;
     padding: 0 10px;
     height: 55px;
-    width: 100vw;
+    width: 100%;
     margin: 0;
   }
 
   .logo {
-    width: 50px;
+    width: 80px;
   }
 
   .location-group {
@@ -164,16 +164,16 @@ nav {
   .nav_Search {
     display: flex;
     align-items: center;
-    flex: 1;
     margin: 0 10px;
   }
 
   .search-category {
-    display: none;
+    height: 36px;
+    width: 40px;
   }
 
   .search-input {
-    width: 100%;
+    width: 180px;
     height: 36px;
     font-size: 16px;
     padding: 8px 12px;
@@ -190,7 +190,12 @@ nav {
     height: 60px;
   }
 
+  .bottom-Nav ul {
+    display: flex;
+    justify-content: space-between;
+  }
+
   .bottom-Nav ul li {
-    font-size: 8px;
+    font-size: 12px;
   }
 }

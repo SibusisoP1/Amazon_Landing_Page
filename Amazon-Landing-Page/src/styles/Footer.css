@@ -136,3 +136,14 @@
   color: #dddddd;
   margin-top: 0;
 }
+
+@media (max-width: 576px) {
+  .footer {
+    width: 800px;
+    height: 800px;
+  }
+
+  .footer-logo img {
+    width: 50px;
+  }
+}

@@ -64,7 +64,7 @@
   max-width: 100%;
   height: auto;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .product-info-section {
@@ -206,27 +206,33 @@
   .product-detail-container {
     padding: 10px;
   }
-  
+
   .product-detail {
     grid-template-columns: 1fr;
     gap: 20px;
     padding: 20px;
   }
-  
+
   .product-title {
     font-size: 20px;
   }
-  
+
   .current-price {
     font-size: 24px;
   }
-  
+
   .purchase-section {
     flex-direction: column;
   }
-  
+
   .add-to-cart-btn-large,
   .buy-now-btn {
     width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .product-detail-container {
+    width: 800px;
   }
 }
