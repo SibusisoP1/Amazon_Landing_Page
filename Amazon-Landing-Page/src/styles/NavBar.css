@@ -1,0 +1,138 @@
+nav {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.top-Nav {
+  height: 60px;
+  background-color: #131921;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  align-items: center;
+}
+
+.logo {
+  height: 30px;
+  width: 90px;
+  margin-left: 20px;
+}
+
+.nav_group > * {
+  margin: 0;
+}
+
+.nav_group p {
+  font-size: 12px;
+}
+
+.nav_group h6 {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.location-group {
+  display: flex;
+  align-items: center;
+}
+
+.location > * {
+  margin: 0;
+}
+
+.location p {
+  font-size: 12px;
+  color: #cccccc;
+}
+
+.location h6 {
+  font-weight: bold;
+  font-size: 14px;
+}
+/* search section */
+
+.search-category {
+  height: 38px;
+  background-color: #e6e6e6;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.search-input {
+  width: 681px;
+  height: 38px;
+  border: none;
+}
+
+.search-button {
+  height: 40px;
+  width: 45px;
+  background-color: #febd69;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.nav_cart {
+  margin-right: 10px;
+  display: flex;
+  align-items: end;
+  font-size: 25px;
+  text-decoration: none;
+  color: white;
+}
+
+.nav_cart .cart-count {
+  font-size: 20px;
+  text-decoration: none;
+  color: orange;
+}
+
+.nav_cart h6 {
+  font-size: 14px;
+  text-decoration: none;
+}
+
+/* nav Bottom  */
+
+.bottom-Nav {
+  height: 39px;
+  background-color: #232f3e;
+  color: white;
+  margin: 0;
+}
+
+.bottom-Nav ul {
+  padding: 10px 500px 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  list-style-type: none;
+}
+
+.bottom-Nav ul li {
+  font-size: 14px;
+}
+
+.dark-mode-toggle-bottom {
+  background: transparent;
+  border: 1px solid #ffffff;
+  color: white;
+  padding: 4px 8px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  transition: all 0.3s ease;
+}
+
+.dark-mode-toggle-bottom:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: #f0c14b;
+  color: #f0c14b;
+}
+
+.dark-mode-toggle-bottom i {
+  font-size: 14px;
+}

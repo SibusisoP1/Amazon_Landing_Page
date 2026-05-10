@@ -1,0 +1,86 @@
+@import "./styles/DarkMode.css";
+
+body {
+  margin: 0;
+}
+
+.Banner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Banner img {
+  height: 610px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.Banner .group-wrapper {
+  position: absolute;
+  top: 78%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.Banner .group-wrapper .item-group {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+}
+
+.Banner .group-1 {
+  left: 20%;
+}
+
+.Banner .group-2 {
+  left: 50%;
+}
+
+.Banner .group-3 {
+  left: 80%;
+}
+
+.item-bar {
+  margin-top: 150px;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+  .Banner {
+    height: auto;
+  }
+
+  .Banner img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .Banner .group-wrapper {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    margin: 10px 0;
+    z-index: 1;
+  }
+
+  .Banner .group-1,
+  .Banner .group-2,
+  .Banner .group-3 {
+    left: auto;
+    width: 100%;
+  }
+
+  .Banner .group-wrapper .item-group {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 8px;
+    margin: 0 auto;
+    max-width: 300px;
+  }
+
+  .item-bar {
+    margin-top: 20px;
+  }
+}

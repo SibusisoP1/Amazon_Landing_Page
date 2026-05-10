@@ -1,0 +1,138 @@
+.footer {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer_signin {
+  border: 1px grey solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer_signin h3 {
+  font-size: 24px;
+}
+
+.footer_signin button {
+  height: 30px;
+  width: 243px;
+  border: none;
+  border-radius: 15px;
+  background-color: #ffd814;
+}
+
+.footer_signin p {
+  font-size: 11px;
+}
+
+.back-to-top {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #37475a;
+  margin-top: 15px;
+}
+
+.back-to-top a {
+  padding: 10px 0;
+  color: white;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.footer-middle {
+  height: 300px;
+  background-color: #232f3e;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 260px;
+  padding-left: 260px;
+  color: white;
+  border-bottom: 1px #999999 solid;
+}
+
+.footer-middle ul {
+  list-style-type: none;
+}
+
+.footer-middle ul li h5 {
+  color: white;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.footer-middle ul li {
+  font-size: 14px;
+  color: #dddddd;
+  line-height: 25px;
+}
+
+.footer-logo {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #232f3e;
+}
+
+.footer-logo img {
+  height: 20px;
+}
+
+.footer-semi-bottom {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 200px;
+  padding-right: 200px;
+  background-color: #131a22;
+  padding-bottom: 25px;
+}
+
+.footer-semi-bottom ul {
+  width: 150px;
+  color: #999999;
+  list-style-type: none;
+  font-size: 12px;
+}
+
+.footer-semi-bottom ul li {
+  line-height: 15px;
+  font-size: 12px;
+}
+
+.footer-semi-bottom ul li h5 {
+  margin-bottom: 3px;
+  color: #dddddd;
+  font-size: 12px;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 12px;
+  background-color: #131a22;
+  padding-bottom: 20px;
+}
+
+.footer-bottom-link {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #dddddd;
+  margin-bottom: 0;
+}
+
+.footer-bottom-link p {
+  margin-bottom: 5px;
+}
+
+.footer-bottom p {
+  font-size: 12px;
+  color: #dddddd;
+  margin-top: 0;
+}
