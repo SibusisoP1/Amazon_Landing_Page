@@ -29,6 +29,31 @@
   display: block;
 }
 
+.item-group .price {
+  font-size: 14px;
+  font-weight: bold;
+  color: #b12704;
+  margin: 4px 0;
+}
+
+.add-to-cart-btn-small {
+  background: #f0c14b;
+  border: 1px solid #a88734;
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-size: 11px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #0f1111;
+  transition: background-color 0.2s;
+  margin-top: 4px;
+  width: 100%;
+}
+
+.add-to-cart-btn-small:hover {
+  background: #e7b948;
+}
+
 .item-group a {
   text-decoration: none;
 }

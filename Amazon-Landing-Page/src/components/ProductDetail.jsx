@@ -11,6 +11,8 @@ import img6 from '../assets/img6.png';
 import img7 from '../assets/img7.png';
 import img8 from '../assets/img8.png';
 import hero from '../assets/hero.png';
+import ereader from '../assets/ereader.png';
+import light from '../assets/readilight.png';
 
 const ProductDetail = () => {
   const { productId } = useParams();
@@ -86,31 +88,31 @@ const ProductDetail = () => {
     },
     'Shop Home & Kitchen-2': {
       id: 'Shop Home & Kitchen-2',
-      title: 'Smart Blender',
+      title: 'Eletric Kettle',
       price: 129.99,
       image: img7,
       category: 'Shop Home & Kitchen',
       rating: 4.5,
       reviews: 234,
-      description: 'High-powered blender with smart technology. Perfect for smoothies, soups, and frozen drinks.',
-      features: ['1500W motor', 'Smart presets', '64oz pitcher', 'Pulse function', 'Self-cleaning mode']
+      description: 'Fast-boiling electric kettle with temperature control. Perfect for tea, coffee, and instant meals.',
+      features: ['1.7L capacity', 'Variable temperature', 'Auto shut-off', 'Cordless design', 'Water window']
     },
     'Shop Home & Kitchen-3': {
       id: 'Shop Home & Kitchen-3',
-      title: 'Electric Kettle',
+      title: 'Pillow',
       price: 34.99,
       image: img8,
       category: 'Shop Home & Kitchen',
       rating: 4.3,
       reviews: 890,
-      description: 'Fast-boiling electric kettle with temperature control. Perfect for tea, coffee, and instant meals.',
-      features: ['1.7L capacity', 'Variable temperature', 'Auto shut-off', 'Cordless design', 'Water window']
+      description: 'Premium pillow for ultimate comfort and support. Perfect for a good night sleep with memory foam technology.',
+      features: ['Memory foam', 'Hypoallergenic', 'Breathable cover', 'Neck support', 'Machine washable']
     },
     'Shop Books & Media-0': {
       id: 'Shop Books & Media-0',
       title: 'E-Reader Premium',
       price: 149.99,
-      image: hero,
+      image: ereader,
       category: 'Shop Books & Media',
       rating: 4.8,
       reviews: 3421,
@@ -119,31 +121,31 @@ const ProductDetail = () => {
     },
     'Shop Books & Media-1': {
       id: 'Shop Books & Media-1',
-      title: 'Wireless Headphones',
+      title: 'Home Decor',
       price: 59.99,
       image: img5,
       category: 'Shop Books & Media',
       rating: 4.4,
       reviews: 567,
-      description: 'Over-ear headphones perfect for audiobooks and music. Comfortable design for long listening sessions.',
-      features: ['40-hour battery', 'Comfortable fit', 'Noise reduction', 'Foldable design', 'Universal compatibility']
+      description: 'Stylish home decor items to transform your living space. Modern designs that complement any interior style.',
+      features: ['Modern design', 'Premium materials', 'Easy to install', 'Versatile styling', 'Durable construction']
     },
     'Shop Books & Media-2': {
       id: 'Shop Books & Media-2',
-      title: 'Tablet Stand',
+      title: 'Kitchen Tools Set',
       price: 24.99,
       image: img6,
       category: 'Shop Books & Media',
       rating: 4.2,
       reviews: 123,
-      description: 'Adjustable tablet stand for comfortable reading and video watching. Compatible with all tablet sizes.',
-      features: ['Adjustable angles', 'Sturdy base', 'Non-slip pads', 'Portable design', 'Universal fit']
+      description: 'Complete kitchen tools set with essential utensils. Professional quality for home cooking and food preparation.',
+      features: ['15-piece set', 'Stainless steel', 'Dishwasher safe', 'Ergonomic handles', 'Storage holder included']
     },
     'Shop Books & Media-3': {
       id: 'Shop Books & Media-3',
       title: 'Reading Light',
       price: 19.99,
-      image: img7,
+      image: light,
       category: 'Shop Books & Media',
       rating: 4.6,
       reviews: 789,

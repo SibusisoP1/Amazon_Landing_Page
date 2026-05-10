@@ -1,13 +1,35 @@
 import "../styles/itemGroup.css";
-import { useContext } from "react";
 import { Link } from "react-router-dom";
-import { CartContext } from "../context/CartContext";
 
 const ItemGroup = ({ title, products }) => {
-  const { addToCart } = useContext(CartContext);
+  // Different product names based on category
+  const getProductNames = (categoryTitle) => {
+    if (
+      categoryTitle.includes("Headphones") ||
+      categoryTitle.includes("Speakers")
+    ) {
+      return [
+        "Wireless Headphones",
+        "Bluetooth Speaker",
+        "Smart Speaker",
+        "Earbuds",
+      ];
+    } else if (
+      categoryTitle.includes("Home") ||
+      categoryTitle.includes("Kitchen")
+    ) {
+      return ["Home Decor", "Kitchen Set", "Kitchen Appliance", "Bedding"];
+    } else if (
+      categoryTitle.includes("Books") ||
+      categoryTitle.includes("Media")
+    ) {
+      return ["E-Reader", "Book Shelf", "Reading Light", "Books"];
+    } else {
+      return ["Headsets", "Speaker", "Round Speaker", "Earphones"]; // fallback
+    }
+  };
 
-  const productNames = ["Headsets", "Speaker", "Round Speaker", "Earphones"];
-  const productPrices = [29.99, 49.99, 39.99, 19.99];
+  const productNames = getProductNames(title);
 
   return (
     <div>
@@ -19,27 +41,6 @@ const ItemGroup = ({ title, products }) => {
               <img src={product} alt={`${productNames[index]}`} />
             </Link>
             <p>{productNames[index]}</p>
-            <div className="product-info">
-              <span className="price">${productPrices[index]}</span>
-              <div className="rating">
-                <span className="stars">★★★★☆</span>
-                <span className="review-count">(1,234)</span>
-              </div>
-            </div>
-            <button
-              className="add-to-cart-btn"
-              onClick={() =>
-                addToCart({
-                  id: `${title}-${index}`,
-                  title: productNames[index],
-                  price: productPrices[index],
-                  image: product,
-                  category: title,
-                })
-              }
-            >
-              Add to Cart
-            </button>
           </div>
         ))}
       </div>

@@ -8,10 +8,14 @@ import img5 from "../../assets/img5.png";
 import img6 from "../../assets/img6.png";
 import img7 from "../../assets/img7.png";
 import img8 from "../../assets/img8.png";
+import light from "../../assets/readilight.png";
+import shelf from "../../assets/BookShelf.png";
+import books from "../../assets/books.png";
+import ereader from "../../assets/ereader.png";
+
 import hero from "../../assets/hero.png";
 import Banner from "../../assets/banner.png";
 import ItemGroup from "../../components/itemGroup.jsx";
-import ItemBarGroup from "../../components/itemBarGroup.jsx";
 import ProductGrid from "../../components/ProductGrid.jsx";
 import "../../App.css";
 
@@ -39,7 +43,7 @@ const Home = () => {
         <div className="group-wrapper group-3">
           <ItemGroup
             title="Shop Books & Media"
-            products={[hero, img5, img6, img7]}
+            products={[ereader, shelf, light, books]}
             link="test"
           />
         </div>
