@@ -11,7 +11,6 @@ import img5 from "../assets/img5.png";
 import img6 from "../assets/img6.png";
 import img7 from "../assets/img7.png";
 import img8 from "../assets/img8.png";
-import hero from "../assets/hero.png";
 import ereader from "../assets/ereader.png";
 import light from "../assets/readilight.png";
 

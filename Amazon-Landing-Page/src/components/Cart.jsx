@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import { useContext } from "react";
 import "../styles/Cart.css";
 import { CartContext } from "../context/CartContext";
 
@@ -6,7 +6,9 @@ const Cart = () => {
   const { cartItems, updateQuantity, removeFromCart } = useContext(CartContext);
 
   const calculateSubtotal = () => {
-    return cartItems.reduce((total, item) => total + (item.price * item.quantity), 0).toFixed(2);
+    return cartItems
+      .reduce((total, item) => total + item.price * item.quantity, 0)
+      .toFixed(2);
   };
 
   const getTotalItems = () => {
@@ -28,29 +30,37 @@ const Cart = () => {
       ) : (
         <div className="cart-content">
           <div className="cart-items">
-            {cartItems.map(item => (
+            {cartItems.map((item) => (
               <div key={item.id} className="cart-item">
-                <img src={item.image} alt={item.title} className="cart-item-image" />
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  className="cart-item-image"
+                />
                 <div className="cart-item-details">
                   <h3>{item.title}</h3>
                   <p className="cart-item-category">{item.category}</p>
                   <div className="cart-item-controls">
                     <div className="quantity-controls">
-                      <button 
-                        onClick={() => updateQuantity(item.id, item.quantity - 1)}
+                      <button
+                        onClick={() =>
+                          updateQuantity(item.id, item.quantity - 1)
+                        }
                         className="quantity-btn"
                       >
                         -
                       </button>
                       <span className="quantity">{item.quantity}</span>
-                      <button 
-                        onClick={() => updateQuantity(item.id, item.quantity + 1)}
+                      <button
+                        onClick={() =>
+                          updateQuantity(item.id, item.quantity + 1)
+                        }
                         className="quantity-btn"
                       >
                         +
                       </button>
                     </div>
-                    <button 
+                    <button
                       onClick={() => removeFromCart(item.id)}
                       className="remove-btn"
                     >
@@ -60,7 +70,9 @@ const Cart = () => {
                 </div>
                 <div className="cart-item-price">
                   <span className="price">${item.price}</span>
-                  <span className="subtotal">${(item.price * item.quantity).toFixed(2)}</span>
+                  <span className="subtotal">
+                    ${(item.price * item.quantity).toFixed(2)}
+                  </span>
                 </div>
               </div>
             ))}

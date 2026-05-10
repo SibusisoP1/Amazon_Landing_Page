@@ -136,3 +136,58 @@ nav {
 .dark-mode-toggle-bottom i {
   font-size: 14px;
 }
+
+@media (max-width: 576px) {
+  nav {
+    width: 100%;
+  }
+
+  .top-Nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    height: 55px;
+  }
+
+  .logo {
+    width: 50px;
+  }
+
+  .location-group {
+    display: none;
+  }
+
+  .nav_Search {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    margin: 0 10px;
+  }
+
+  .search-category {
+    display: none;
+  }
+
+  .search-input {
+    width: 100%;
+    height: 36px;
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 4px;
+  }
+
+  .search-button {
+    height: 36px;
+    width: 40px;
+    border-radius: 0 4px 4px 0;
+  }
+
+  .bottom-Nav {
+    height: 60px;
+  }
+
+  .bottom-Nav ul li {
+    font-size: 8px;
+  }
+}

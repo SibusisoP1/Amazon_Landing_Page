@@ -12,8 +12,6 @@ import light from "../../assets/readilight.png";
 import shelf from "../../assets/BookShelf.png";
 import books from "../../assets/books.png";
 import ereader from "../../assets/ereader.png";
-
-import hero from "../../assets/hero.png";
 import Banner from "../../assets/banner.png";
 import ItemGroup from "../../components/itemGroup.jsx";
 import ProductGrid from "../../components/ProductGrid.jsx";
